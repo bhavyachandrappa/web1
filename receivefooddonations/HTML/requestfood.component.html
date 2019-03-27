@@ -1,0 +1,33 @@
+<!-- I have used bootstrap card to group the entire tracking details. I have added the entire content under the card header to get the different style -->
+<!-- https://getbootstrap.com/docs/4.0/components/card/ -->
+
+<div class="modal-dialog"> <!--Author: bhavya-->
+        <form class="form-horizontal" [formGroup]="requestfood">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Request Food</h4>
+                </div>
+                <div class="modal-body">                
+                    <div class="row form-group">
+                        <div class="col-md-6 field-name">Food Name:</div>
+                        <div class="col-md-4  field-value"><input type="text" [(ngModel)]="foodDonationModel.foodName" name="foodName" maxlength="15" size="10" required/></div>
+                    </div>
+                    <div class="row form-group required">
+                        <div class="col-md-6 field-name">Number of Servings:</div>
+                        <div class="col-md-2  field-value"><input type="number" [(ngModel)]="foodDonationModel.noOfServings" name="noOfServings" maxlength="2" size="2" required/></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 field-name">Required On:</div>
+                        <input class="col-sm-6" type="date" [(ngModel)]="foodDonationModel.RequiredDate" name="RequiredDate" formControlName="Requiredon" required>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 field-name">Comments:</div>
+                         <div class="col-md-6  field-value"><input type="text" [(ngModel)]="foodDonationModel.comments" name="comments" maxlength="15" size="15" /></div>
+                   </div>
+                 </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" (click)="save($event)" [disabled]="!form.valid">Save</button>
+                </div>
+            </div>
+        </form>
+    </div>	

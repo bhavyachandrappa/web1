@@ -1,0 +1,23 @@
+.accordion, button{  /*Author: bhavya*/
+    background-color: #00b964;
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    padding: 10px;
+    border: 0px;
+}
+.accordion {
+    margin-left: 8%;
+    width: 85%;
+}
+.card {
+    margin-top: 2.5%;
+}
+
+#myRequests, #foodofferings {
+    margin: 1%;
+}
+
+.card-header {
+    font-weight: bold;
+}

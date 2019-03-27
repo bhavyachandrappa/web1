@@ -1,0 +1,107 @@
+﻿<!-- Accordion view referenced from https://getbootstrap.com/docs/4.0/components/collapse/ -->
+<!-- I have modified the accordion header into a button so that the user can click anywhere to expand or collapse the accordian view. -->
+<div id="receiverdashboard"> <!--Author: bhavya-->
+        <div id="myRequests">
+            <button class="btn btn-primary accordion" data-toggle="collapse" data-target="#myRequestsCardPlaceHolder"
+                aria-expanded="true" aria-controls="collapseOne">
+                My Requests
+            </button>
+            <!-- I have used bootstrap card to group the controls related to a food offerings or food requests and display in their respective sections -->
+            <!-- https://getbootstrap.com/docs/4.0/components/card/ -->
+            <div id="myRequestsCardPlaceHolder" class="collapse" aria-labelledby="#myRequests" data-parent="#receiverdashboard">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-text float-left">Sandwiches</div>
+                                <div class="card-text float-right">Feb 12, 2019</div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text float-left">Required Quantity: 60 Servings</div>
+                                
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-text">
+                                    <small class="text-muted" style="margin-left:1.25%;">In-Progress</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-text float-left">Burgers</div>
+                                <div class="card-text float-right">Feb 15, 2019</div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text float-left">Required Quantity: 40 Servings</div>
+                                
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-text">
+                                    <small class="text-muted" style="margin-left:1.25%;">In-Progress</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    
+        <div id="foodofferings">
+            <button class="btn btn-primary accordion" data-toggle="collapse" data-target="#foodOfferingsCardPlaceHolder"
+                aria-expanded="false" aria-controls="collapseTwo">
+                Food Offerings
+            </button>
+            <div id="foodOfferingsCardPlaceHolder" class="collapse" aria-labelledby="foodOfferings" data-parent="#receiverdashboard">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                    <div class="card-text float-left">Rick Edwards</div>
+                                    <div class="card-text float-right text-muted"><small>Contact: +19023567899</small></div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text float-left">Offering Quantity: 35 Servings</div>
+                                <div class="btn-toolbar card-text float-right">
+                                        <div class="card-text float-right"><button class="btn btn-default">Accept</button></div>
+                                        &nbsp;
+                                        <div class="card-text float-right"><button  class="btn btn-primary">Ignore</button></div>
+                                         </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-text">
+                                    <small class="text-muted" style="margin-left:1.25%;">To be picked up before 9pm on Feb 10,
+                                        2019</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-text float-left">Ryan Bell</div>
+                                <div class="card-text float-right text-muted"><small>Contact: +19021231234</small></div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text float-left">Offering Quantity: 35 Servings</div>
+                                <div class="btn-toolbar card-text float-right">
+                                <div class="card-text float-right"><button class="btn btn-default">Accept</button></div>
+                                &nbsp;
+                                <div class="card-text float-right"><button  class="btn btn-primary">Ignore</button></div>
+                                 </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-text">
+                                    <small class="text-muted" style="margin-left:1.25%;">To be picked up before 6pm on Feb 15,
+                                        2019</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    

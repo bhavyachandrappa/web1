@@ -1,0 +1,58 @@
+/*Author: bhavya*/
+
+div{
+    color: #00b964;
+}
+.modal-header{
+    color: white;
+}
+.card > .card-header {
+    color: #00b964;
+    font-weight: bold;
+    background-color: rgb(219, 241, 189);
+    border: solid #00b964 1px;
+}
+
+.modal-header {
+    background-color:#00b964;
+    border-color: #00b964;
+    
+}
+
+.list-group {
+    border: solid #00b964 1px;
+}
+
+.field-name {
+    color: #00b964;
+    font-weight: 500;
+    
+}
+
+.float-left {
+    color: #00b964 !important;
+}
+
+small {
+    color: #00b964;
+    font-style: italic;
+}
+
+.field-value {
+    border: #00b964 solid 1px;
+    border-radius: .25rem;
+    background-color: rgb(219, 241, 189);
+    color: #00b964;
+}
+
+.row {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+button{
+    background-color: #00b964;
+    color: white;
+}
+
+
